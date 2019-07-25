@@ -6,12 +6,13 @@ export class BookEntity {
     id: number;
 
     @Column()
-    title: String;
+    title: string;
 
     @Column()
-    subTitle: String;
+    subTitle: string;
 
+    //{type: String, index: {unique: true}} - not working with sqllite
     @Column()
-    isbn13: {type: String, index: {unique: true}};
+    isbn13: string;
     
 }

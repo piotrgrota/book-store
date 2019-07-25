@@ -5,11 +5,11 @@ export function bookRoutes(app: Application){
     const controller = new BookController();
 
     app.route("/books")
-        .get(controller.listAllBooks)
-        .post(controller.createBook)
+        .get((req,resp) => controller.listAllBooks(req, resp))
+        .post((req,resp) => controller.createBook(req, resp))
 
-    app.route("/books/:isbn")
-        .put(controller.updateBook)
-        .delete(controller.deleteBook)
+    app.route("/books/:id")
+        .put((req,resp) => controller.updateBook(req, resp))
+        .delete((req,resp) => controller.deleteBook(req, resp))
 
 }

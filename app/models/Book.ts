@@ -1,18 +1,16 @@
 import { IsISBN} from "class-validator";
+import {JsonProperty} from 'json-object-mapper'
 
 export class Book{
-    constructor(isbn:string, title:string, subTitle:string){
-        this.isbn = isbn;
-        this.title = title;
-        this.subTitle = subTitle;
+    constructor(){
+
     }
 
+    id:number;
     @IsISBN("13")
     isbn:string;
-
-    title: String;
-
-    subTitle: String;
+    title: string;
+    subTitle: string;
 
 }
 

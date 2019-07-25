@@ -27,7 +27,7 @@ var BookEntity = /** @class */ (function () {
     ], BookEntity.prototype, "subTitle", void 0);
     __decorate([
         typeorm_1.Column(),
-        __metadata("design:type", Object)
+        __metadata("design:type", String)
     ], BookEntity.prototype, "isbn13", void 0);
     BookEntity = __decorate([
         typeorm_1.Entity()

@@ -11,10 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var class_validator_1 = require("class-validator");
 var Book = /** @class */ (function () {
-    function Book(isbn, title, subTitle) {
-        this.isbn = isbn;
-        this.title = title;
-        this.subTitle = subTitle;
+    function Book() {
     }
     __decorate([
         class_validator_1.IsISBN("13"),
