@@ -1,0 +1,1 @@
+{"version":3,"file":"book.js","sourceRoot":"","sources":["../../app/dbmodels/book.ts"],"names":[],"mappings":";;;;;;;;;;;AAAA,mCAA+D;AAG/D;IAAA;IAaA,CAAC;IAXG;QADC,gCAAsB,EAAE;;0CACd;IAGX;QADC,gBAAM,EAAE;kCACF,MAAM;6CAAC;IAGd;QADC,gBAAM,EAAE;kCACC,MAAM;gDAAC;IAGjB;QADC,gBAAM,EAAE;;8CACqC;IAXrC,UAAU;QADtB,gBAAM,EAAE;OACI,UAAU,CAatB;IAAD,iBAAC;CAAA,AAbD,IAaC;AAbY,gCAAU"}

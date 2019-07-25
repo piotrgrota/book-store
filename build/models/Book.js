@@ -9,34 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var typeorm_1 = require("typeorm");
+var class_validator_1 = require("class-validator");
 var Book = /** @class */ (function () {
     function Book() {
     }
     __decorate([
-        typeorm_1.PrimaryGeneratedColumn(),
-        __metadata("design:type", Number)
-    ], Book.prototype, "id", void 0);
-    __decorate([
-        typeorm_1.Column(),
+        class_validator_1.IsISBN("13"),
         __metadata("design:type", String)
-    ], Book.prototype, "originTitle", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Book.prototype, "subTitle", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Book.prototype, "isbn10", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", Object)
-    ], Book.prototype, "isbn13", void 0);
-    Book = __decorate([
-        typeorm_1.Entity()
-    ], Book);
+    ], Book.prototype, "text", void 0);
     return Book;
 }());
 exports.Book = Book;
-//# sourceMappingURL=book.js.map
+//# sourceMappingURL=Book.js.map

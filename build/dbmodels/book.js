@@ -10,33 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var typeorm_1 = require("typeorm");
-var Book = /** @class */ (function () {
-    function Book() {
+var BookEntity = /** @class */ (function () {
+    function BookEntity() {
     }
     __decorate([
         typeorm_1.PrimaryGeneratedColumn(),
         __metadata("design:type", Number)
-    ], Book.prototype, "id", void 0);
+    ], BookEntity.prototype, "id", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Book.prototype, "originTitle", void 0);
+    ], BookEntity.prototype, "title", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Book.prototype, "subTitle", void 0);
-    __decorate([
-        typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Book.prototype, "isbn10", void 0);
+    ], BookEntity.prototype, "subTitle", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Object)
-    ], Book.prototype, "isbn13", void 0);
-    Book = __decorate([
+    ], BookEntity.prototype, "isbn13", void 0);
+    BookEntity = __decorate([
         typeorm_1.Entity()
-    ], Book);
-    return Book;
+    ], BookEntity);
+    return BookEntity;
 }());
-exports.Book = Book;
+exports.BookEntity = BookEntity;
 //# sourceMappingURL=book.js.map
