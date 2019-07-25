@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/piotrgrota/book-store#readme",
   "dependencies": {
+    "@types/express": "^4.17.0",
     "express": "^4.17.1",
     "typescript": "^3.5.3"
   }
