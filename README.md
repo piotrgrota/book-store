@@ -1,5 +1,21 @@
 # book-store
 
+# clear data
+Remove sql lite data -  data.sqlite
+
+# install
+npm install
+
+# Compilation
+npm run tsc
+
+
+
+# How To Launch
+npm 
+
+
+
 #Notes:
 
 1.  I had issues with json-object-mapper - for some reason runtime exception about missing method 

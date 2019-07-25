@@ -77,7 +77,7 @@ var BookController = /** @class */ (function () {
                     case 1:
                         bookEntity = _a.sent();
                         if (!bookEntity) {
-                            res.status(404).send({ error: "Book not found: " + id });
+                            res.status(404).send({ error: "Book not found with id: " + id });
                             return [2 /*return*/];
                         }
                         return [4 /*yield*/, bookRepository.delete(id)];
@@ -101,7 +101,7 @@ var BookController = /** @class */ (function () {
                     case 1:
                         bookEntity = _a.sent();
                         if (!bookEntity) {
-                            res.status(404).send({ error: "Book not found: " + id });
+                            res.status(404).send({ error: "Book not found with id: " + id });
                             return [2 /*return*/];
                         }
                         bookDto = ObjectMapper_1.ObjectMapper.mapFromRequest(req.body);
