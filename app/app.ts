@@ -2,6 +2,7 @@ import * as express from "express";
 import {Request, Response} from "express";
 import * as bodyParser from  "body-parser";
 import { BookValidator } from "./services/validatorService";
+import { Book } from "./models/Book";
 
 
 // Create a new express application instance
@@ -11,7 +12,8 @@ app.use(bodyParser.json());
 const validator = new BookValidator();
 
 app.get('/books', function (req: Request, res: Response) {
-  res.send('Hello World!');
+  var book = new Book("978-1-56619-909-4","Title1","Title1");
+  res.json([book]);
 });
 
 app.post('/books', function (req: Request, res: Response) {
@@ -20,9 +22,10 @@ app.post('/books', function (req: Request, res: Response) {
 
 app.put('/books/:isbn', function (req: Request, res: Response) {
     var isbn = req.params.isbn;
-    if(validator.isValidISBN(isbn))
+    if(!validator.isValidISBN(isbn))
     {
-        res.status(404).send({ error: "Not found "+ isbn });
+        res.status(404).send({ error: "Format of isbn book is invalid: "+ isbn });
+        return;
     }
     res.send('Hello World!');
 });
@@ -30,9 +33,10 @@ app.put('/books/:isbn', function (req: Request, res: Response) {
 
 app.delete('/books:isbn', function (req: Request, res: Response) {
     var isbn = req.params.isbn;
-    if(validator.isValidISBN(isbn))
+    if(!validator.isValidISBN(isbn))
     {
-        res.status(404).send({ error: "Not found "+ isbn });
+        res.status(404).send({ error: "Format of isbn book is invalid: "+ isbn });
+        return;
     }
     else
     {
