@@ -6,20 +6,25 @@ This is sample implementation of book store using REST-API and node js with type
 Remove sql lite data -  data.sqlite
 
 # install
+
 npm install
 
 # Compilation
+
 npm run tsc
 
 
 
 # How To Launch
+
 node .\build\app.js
 
 ALL Rest API
 
 
 # Request samples
+
+
 1. Create new book
 HTTP VERB  - POST:
 request :
@@ -35,6 +40,7 @@ body:
 
 
 2. Update Book
+
 HTTP Verb - PUT
 request:
 id - id of book- not ISBN
@@ -63,7 +69,7 @@ http://localhost:3000/books
 
 Return list of all Books without paging
 
-#Notes:
+# Notes:
 
 I am using sqlite and it is not supporting all typeorm configuration
 
