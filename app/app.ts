@@ -1,10 +1,12 @@
-// lib/app.ts
-import express = require('express');
+import * as express from "express";
+import {Request, Response} from "express";
+import * as bodyParser from  "body-parser";
 
 // Create a new express application instance
-const app: express.Application = express();
+const app = express();
+app.use(bodyParser.json());
 
-app.get('/', function (req, res) {
+app.get('/', function (req: Request, res: Response) {
   res.send('Hello World!');
 });
 
