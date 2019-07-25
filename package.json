@@ -1,0 +1,24 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "Sample Book Store api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrgrota/book-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotrgrota/book-store/issues"
+  },
+  "homepage": "https://github.com/piotrgrota/book-store#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^3.5.3"
+  }
+}
